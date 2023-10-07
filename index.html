@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0, user-scalable=0">
     <!-- Iphone 모바일 확대 방지  maximum-scale=1.0, user-scalable=0-->
-    <title>메디패스</title> 
+    <title>메디패스</title>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/import.css">
+    <script src="js/common.js"></script>
 </head>
 <body>
     <header>
@@ -22,40 +25,67 @@
             </ul>
         </nav>
     </header>
-    <section>
-        <h2>
+    <section class="mainArea">
+        <h2 class="contentSize">
             <img src="images/main-logo.png" alt="Medi Pass x SK broadband">
             <small>환자 본인확인 증명시스템</small>
         </h2>
     </section>
-    <section>
+    <section class="serviceArea contentSize">
         <h3>Service</h3>
         <strong>스마트 본인확인 증명시스템</strong>
         <p>
             본인인증 증명시스템은 의료기관에서 본인인증을 정확하게 수행하였음을 증명하고
             본인인증과 동시에 환자 접수 시스템에 자동으로 등록되도록 처리하는,본인인증 및 보험 수진자 자격확인 서비스 입니다.
         </p>
-        <ul>
+        <ul data-styleIdx>
             <li>
-                <strong>생체정보인식</strong>
-                <p>지문인식을 이용한 신분확인</p>
+                <div>
+                    <div>
+                        <div>
+                            <strong>생체정보인식</strong>
+                            <p>지문인식을 이용한 신분확인</p>
+                        </div>
+                    </div>
+                </div>
             </li>
             <li>
-                <strong>신분정보확인</strong>
-                <p>전자신원정보를 이용한 신분확인</p>
+                <div>
+                    <div>
+                        <div>
+                            <strong>신분정보확인</strong>
+                            <p>전자신원정보를 이용한 신분확인</p>
+                        </div>
+                    </div>
+                </div>
             </li>
             <li>
-                <strong>금융 전자청약</strong>
-                <p>바이오인증과 연동한 전자결재</p>
+                <div>
+                    <div>
+                        <div>
+                            <strong>금융 전자청약</strong>
+                            <p>바이오인증과 연동한 전자결재</p>
+                        </div>
+                    </div>
+                </div>
             </li>
             <li>
-                <strong>안면인식</strong>
-                <p>안면정보 비교를 통해 신원파악</p>
+                <div>
+                    <div>
+                        <div>
+                            <strong>안면인식</strong>
+                            <p>안면정보 비교를 통해 신원파악</p>
+                        </div>
+                    </div>
+                </div>
             </li>
         </ul>
     </section>
     <section>
-        <div></div>
+        <div>
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
         <div>
             <h3>Application</h3>
             <strong>본인확인 어플리케이션</strong>
