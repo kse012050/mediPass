@@ -10,6 +10,10 @@ section h3{font-size: 32px; line-height: 38px; font-weight: 700; margin-bottom: 
 section h3 + strong{font-size: 42px; line-height: 50px; margin-bottom: 20px; font-weight: 700; display: block;}
 section h3 + strong + p{font-size: 15px; line-height: 24px; color: var(--color01);}
 
+section:has( > div:nth-child(1)){display: flex; justify-content: space-between;}
+section:has( > div:nth-child(1)) div:nth-child(1){width: 52.5423%;}
+section:has( > div:nth-child(1)) div:nth-child(2){width: 40.6779%;}
+
 
 /* 해더 */
 header{position: fixed; left: 0; top: 0; width: 100%; display: flex; justify-content: center;}
