@@ -19,8 +19,23 @@
 
 
 /* 어플리케이션 */
-.applicationArea{}
+.applicationArea{margin-bottom: 175px;}
 .applicationArea div:nth-child(1){position: relative;}
 .applicationArea div:nth-child(1) img{box-shadow: 10px 4px 30px 0px rgba(0, 0, 0, 0.10);}
 .applicationArea div:nth-child(1) img:nth-child(1){width: 58.5483%;}
 .applicationArea div:nth-child(1) img:nth-child(2){width: 42.2580%; position: absolute; right: 45px; top: 50%; transform: translateY(-50%); z-index: -1;}
+
+
+/* 키오스크 */
+.kioskArea{}
+.kioskArea div:nth-child(1){}
+.kioskArea div:nth-child(1) ul{}
+.kioskArea div:nth-child(1) ul li{}
+.kioskArea div:nth-child(1) ul li:not(:last-child){margin-bottom: 18px;}
+.kioskArea div:nth-child(1) ul li button{width: 450px; padding: 28px 24px; font-size: 24px; font-weight: 700; color: var(--bg01); text-align: left; border: 1px solid var(--bg01); box-sizing: border-box;}
+.kioskArea div:nth-child(1) ul li.active button{color: white; background-color: var(--bg01);}
+.kioskArea div:nth-child(1) ul li div{padding: 40px 24px 32px; display: none;}
+.kioskArea div:nth-child(1) ul li.active div{display: block;}
+.kioskArea div:nth-child(1) ul li div strong{font-size: 28px; font-weight: 700; display: block; margin-bottom: 15px;}
+.kioskArea div:nth-child(1) ul li div p{font-size: 15px; line-height: 24px; color: var(--color01);}
+.kioskArea div:nth-child(1) > p{}
