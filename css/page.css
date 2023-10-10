@@ -59,6 +59,6 @@
 
 
 /* 컨텍트 어스 */
-.contactUsArea{text-align: center;}
+.contactUsArea{margin-bottom: 150px; text-align: center;}
 .contactUsArea iframe{width: 100%;}
 .contactUsArea small{font-size: 15px; line-height: 24px; margin-top: 25px; color: var(--color01); display: block;}
