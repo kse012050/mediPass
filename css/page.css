@@ -2,20 +2,18 @@
 /* 메인 - 최상단 */
 .mainArea{height: 100vh; background: url('../images/main-bg.png') no-repeat center / cover; display: flex; justify-content: center; align-items: center;}
 .mainArea h2{text-align: center;}
-.mainArea h2 img{max-width: 482px;}
-.mainArea h2 small{font-size: 18px; line-height: 21px; margin-top: 6.4516vh; font-weight: 600; color: white; display: block;}
+.mainArea h2 small{font-weight: 600; color: white; display: block;}
 
 /* 서비스 */
-.serviceArea{padding-top: 193px; margin-bottom: 608px;}
-.serviceArea > p{max-width: 486px;}
-.serviceArea ul{width: 100%; max-width: 934px; /* aspect-ratio: 1; */ height: 1px; margin-left: auto; margin-top: 310px; position: relative; /* background-color: red; */}
-.serviceArea ul li{--width: 314px; width: var(--width); aspect-ratio: 1; position: absolute; top: calc(var(--width) / 2 * -1); left: calc(50% - (var(--width) / 2)); transform: translateX(calc(70% + 23px)); --rotate: calc(var(--styleIdx) * 90deg + 270deg); rotate: var(--rotate);}
-.serviceArea ul li > div{height: 100%; rotate: calc(var(--rotate) * -1);}
-.serviceArea ul li > div > div{height: 100%; rotate: 45deg; background-color: white; box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.10);}
-.serviceArea ul li > div > div div{height: 100%; rotate: -45deg; display: flex; flex-direction: column; justify-content: center; align-items: center;}
-.serviceArea ul li > div > div div::before{content: ''; --height: 82px; height: var(--height); aspect-ratio: 112 / 82; background: url('../images/icon-service.png') no-repeat left top calc(var(--height) * var(--styleIdx) * -1) / 100%; margin-bottom: 28.5px;}
-.serviceArea ul li > div > div div strong{font-size: 24px; line-height: 29px; margin-bottom: 10px; font-weight: 700;}
-.serviceArea ul li > div > div div p{font-size: 14px; line-height: 17px; color: var(--color01); }
+.serviceArea{position: relative;}
+.serviceArea > div{position: relative;}
+.serviceArea > div ul li > div > div div::before{content: ''; height: var(--height); aspect-ratio: 112 / 82; background: url('../images/icon-service.png') no-repeat left top calc(var(--height) * var(--styleIdx) * -1) / 100%;}
+.serviceArea > div ul li > div > div div strong{font-weight: 700;}
+.serviceArea > div ul li > div > div div p{font-size: 14px; line-height: 17px; color: var(--color01); }
+.serviceArea > div [class*="circle"]{position: absolute;}
+.serviceArea > div .circle01{top: 0; left: 0; transform: translateY(-50%);}
+.serviceArea > div .circle02{bottom: -90px; right: 38px; z-index: -1; transform: translateY(100%);}
+.serviceArea .square{position: absolute; top: -400px; left: -23%; width: 68.75%; aspect-ratio: 1300 / 2216; background-color: #f8f8f9; transform: rotate(45deg); z-index: -1;}
 
 
 /* 어플리케이션 */

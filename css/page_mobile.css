@@ -1,0 +1,16 @@
+/* 메인 - 최상단 */
+.mainArea h2 img{max-width: 300px;}
+.mainArea h2 small{font-size: 16px; line-height: 19px; margin-top: 4.6875vh;}
+
+
+/* 서비스 */
+.serviceArea{margin-bottom: 40px;}
+.serviceArea > div{padding-top: 150px;}
+.serviceArea > div > p{margin-bottom: 60px;}
+.serviceArea > div ul{display: flex; flex-wrap: wrap;}
+.serviceArea > div ul li{width: calc((100% - 40px) / 2);}
+.serviceArea > div ul li:nth-last-child(n + 3){margin-bottom: 75px;}
+.serviceArea > div ul li > div{text-align: center;}
+.serviceArea > div ul li > div > div div::before{display: block; --height: 68px; margin-inline: auto; margin-bottom: 20px;}
+.serviceArea > div ul li > div > div div strong{font-size: 16px; line-height: 19px; margin-bottom: 5px;}
+.serviceArea > div .circle02{position: relative;}

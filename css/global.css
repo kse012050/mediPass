@@ -1,26 +1,23 @@
 
-
+.mainPage{overflow: hidden;}
 
 /* 컨텐츠 사이즈 */
 .contentSize{width: calc(100% - (var(--spacing) * 2)); max-width: var(--maxWidth); margin-inline: auto;}
 
 
 /* 서브 타이틀 */
-section h3{font-size: 32px; line-height: 38px; font-weight: 700; margin-bottom: 70px;}
-section h3 + strong{font-size: 42px; line-height: 50px; margin-bottom: 20px; font-weight: 700; display: block;}
-section h3 + strong + p{font-size: 15px; line-height: 24px; color: var(--color01);}
+section h3{font-weight: 700;}
+section h3 + strong{font-weight: 700; display: block;}
+section h3 + strong + p{color: var(--color01);}
 
-section:has( > div:nth-child(1)){display: flex; justify-content: space-between;}
-section:has( > div:nth-child(1)) > div:nth-child(1){width: 52.5423%;}
-section:has( > div:nth-child(1)) > div:nth-child(2){width: 40.6779%;}
+section:has( > div:nth-child(1)):has( > div:nth-child(2)){display: flex; justify-content: space-between;}
+section:has( > div:nth-child(1)):has( > div:nth-child(2)) > div:nth-child(1){width: 52.5423%;}
+section:has( > div:nth-child(1)):has( > div:nth-child(2)) > div:nth-child(2){width: 40.6779%;}
 
 
 /* 해더 */
-header{position: fixed; left: 0; top: 0; width: 100%; display: flex; justify-content: center;}
-header h1{position: absolute; left: 40px; top: 50%; transform: translateY(-50%); width: 120px;}
+header{position: fixed; left: 0; top: 0; width: 100%; display: flex;}
 header h1 a img{width: 100%;}
-header nav ul{display: flex; justify-content: center; align-items: center; gap: 56px;}
-header nav ul li a{font-size: 15px; line-height: 80px; font-weight: 700; color: white;}
 
 
 /* 푸터 */

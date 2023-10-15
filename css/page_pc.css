@@ -1,0 +1,16 @@
+/* 메인 - 최상단 */
+.mainArea h2 img{max-width: 482px;}
+.mainArea h2 small{font-size: 18px; line-height: 21px; margin-top: 6.4516vh;}
+
+
+/* 서비스 */
+.serviceArea{margin-bottom: 608px;}
+.serviceArea > div{padding-top: 193px;}
+.serviceArea > div > p{max-width: 486px;}
+.serviceArea > div ul{width: 100%; max-width: 934px; height: 1px; margin-left: auto; margin-top: 310px; position: relative;}
+.serviceArea > div ul li{--width: 314px; width: var(--width); aspect-ratio: 1; position: absolute; top: calc(var(--width) / 2 * -1); left: calc(50% - (var(--width) / 2)); transform: translateX(calc(70% + 23px)); --rotate: calc(var(--styleIdx) * 90deg + 270deg); rotate: var(--rotate);}
+.serviceArea > div ul li > div{height: 100%; rotate: calc(var(--rotate) * -1);}
+.serviceArea > div ul li > div > div{height: 100%; rotate: 45deg; background-color: white; box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.10);}
+.serviceArea > div ul li > div > div div{height: 100%; rotate: -45deg; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.serviceArea > div ul li > div > div div::before{--height: 82px; margin-bottom: 28.5px;}
+.serviceArea > div ul li > div > div div strong{font-size: 24px; line-height: 29px; margin-bottom: 10px;}
