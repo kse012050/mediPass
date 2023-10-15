@@ -6,4 +6,6 @@
     --bg01: #1E2B52;
     --bg02: #70D1DB;
     --bg03: #F8F8F9;
+    --responsive: 800px;
+    --mobileSize: 300px;
 }

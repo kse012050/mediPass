@@ -13,4 +13,47 @@
 .serviceArea > div ul li > div{text-align: center;}
 .serviceArea > div ul li > div > div div::before{display: block; --height: 68px; margin-inline: auto; margin-bottom: 20px;}
 .serviceArea > div ul li > div > div div strong{font-size: 16px; line-height: 19px; margin-bottom: 5px;}
-.serviceArea > div .circle02{position: relative;}
+.serviceArea > div .circle01{width: 130px;}
+.serviceArea > div .circle02{width: 185px; margin-top: 50px; margin-left: auto;}
+
+
+/* 어플리케이션 */
+.applicationArea{display: flex; flex-direction: column; margin-bottom: 140px;}
+.applicationArea div:nth-child(1){order: 1; max-width: var(--mobileSize); margin-inline: auto;}
+.applicationArea div:nth-child(2){margin-bottom: 60px;}
+
+
+/* 키오스크 */
+.kioskArea{margin-bottom: 120px;}
+.kioskArea div:nth-child(1) ul{display: flex; gap: 6px; padding-bottom: 226px; position: relative;}
+.kioskArea div:nth-child(1) ul li{flex: 1;}
+.kioskArea div:nth-child(1) ul li div{position: absolute; left: 0; bottom: 0; width: 100%; padding-bottom: 80px;}
+.kioskArea div:nth-child(1) ul li button{width: 100%; font-size: 16px; line-height: 50px;}
+.kioskArea > p{justify-content: center; font-size: 14px; line-height: 24px; margin-top: 70px;}
+.kioskArea > p::before{width: 15px; margin-right: 7px;}
+
+
+/* 오페래이트 */
+.operateArea{margin-bottom: 120px;}
+.operateArea > p{margin-bottom: 84px;}
+.operateArea > div{flex-wrap: wrap; justify-content: center; gap: 47px 32px;}
+.operateArea > div p{font-size: 15px; line-height: 18px; width: 130px;}
+.operateArea > div p::after{z-index: -1;}
+.operateArea > div p:nth-of-type(1)::after{left: 50%; transform-origin: left; rotate: -70deg;}
+.operateArea > div p:nth-of-type(2)::after{right: 50%; transform-origin: right; rotate: 70deg;}
+.operateArea > div div{width: 172px; margin-inline: calc((100% - 172px) / 2); box-shadow: 0px 0px 0px 34px rgba(112, 209, 219, 0.1); order: -1;}
+.operateArea > div div img{width: 121px; margin-bottom: 10px;}
+.operateArea > div div b{font-size: 14px; line-height: 17px;}
+
+
+/* 컴퍼니 */
+.companyArea{margin-bottom: 120px;}
+.companyArea div p{margin-bottom: 50px;}
+.companyArea div:nth-child(2){max-width: var(--mobileSize); margin-inline: auto;}
+
+
+
+/* 컨텍트 어스 */
+.contactUsArea{margin-bottom: 160px;}
+.contactUsArea iframe{width: calc(100% + var(--spacing) * 2); transform: translateX(calc(var(--spacing) * -1));}
+.contactUsArea small{font-size: 14px; margin-top: 20px; text-align: center;}

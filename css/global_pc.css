@@ -6,9 +6,31 @@ section h3 + strong{font-size: 42px; line-height: 50px; margin-bottom: 20px;}
 section h3 + strong + p{font-size: 15px; line-height: 24px;}
 
 
+section:has( > div:nth-child(1)):has( > div:nth-child(2)){display: flex; justify-content: space-between;}
+section:has( > div:nth-child(1)):has( > div:nth-child(2)) > div:nth-child(1){width: 52.5423%;}
+section:has( > div:nth-child(1)):has( > div:nth-child(2)) > div:nth-child(2){width: 40.6779%;}
+
+
 /* 해더 */
-header{justify-content: center;}
-header h1{position: absolute; left: 40px; top: 50%; transform: translateY(-50%); width: 120px;}
+header h1{width: 120px;}
 header nav ul{display: flex; justify-content: center; align-items: center; gap: 56px;}
 header nav ul li a{font-size: 15px; line-height: 80px; font-weight: 700; color: white;}
 header button{display: none;}
+
+@media screen and (1050px < width) {
+    /* 해더 */
+    header{justify-content: center;}
+    header h1{position: absolute; left: 40px; top: 50%; transform: translateY(-50%);}
+}
+@media screen and (width < 1050px) {
+    /* 해더 */
+    header{justify-content: space-between; align-items: center; padding-inline: 40px;}
+    
+}
+
+
+/* 푸터 */
+footer{padding: 30px 40px 67px; align-items: center; justify-content: space-between;}
+footer p{font-size: 15px;}
+footer dl{font-size: 14px;}
+footer dl:first-of-type{margin-left: auto;}

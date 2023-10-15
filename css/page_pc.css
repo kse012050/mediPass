@@ -7,10 +7,54 @@
 .serviceArea{margin-bottom: 608px;}
 .serviceArea > div{padding-top: 193px;}
 .serviceArea > div > p{max-width: 486px;}
-.serviceArea > div ul{width: 100%; max-width: 934px; height: 1px; margin-left: auto; margin-top: 310px; position: relative;}
+.serviceArea > div ul{width: 100%; max-width: 934px; height: 1px; margin-left: auto; position: relative;}
 .serviceArea > div ul li{--width: 314px; width: var(--width); aspect-ratio: 1; position: absolute; top: calc(var(--width) / 2 * -1); left: calc(50% - (var(--width) / 2)); transform: translateX(calc(70% + 23px)); --rotate: calc(var(--styleIdx) * 90deg + 270deg); rotate: var(--rotate);}
 .serviceArea > div ul li > div{height: 100%; rotate: calc(var(--rotate) * -1);}
 .serviceArea > div ul li > div > div{height: 100%; rotate: 45deg; background-color: white; box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.10);}
 .serviceArea > div ul li > div > div div{height: 100%; rotate: -45deg; display: flex; flex-direction: column; justify-content: center; align-items: center;}
 .serviceArea > div ul li > div > div div::before{--height: 82px; margin-bottom: 28.5px;}
 .serviceArea > div ul li > div > div div strong{font-size: 24px; line-height: 29px; margin-bottom: 10px;}
+.serviceArea > div .circle01{width: 203px;}
+.serviceArea > div .circle02{position: absolute; width: 259px; bottom: -90px; right: 38px; z-index: -1; transform: translateY(100%);}
+
+@media screen and (1200px < width) {
+    .serviceArea > div ul{margin-top: 310px;}
+}
+@media screen and (width < 1200px) {
+    .serviceArea > div ul{margin-top: 510px;}
+}
+
+/* 어플리케이션 */
+.applicationArea{margin-bottom: 175px;}
+
+
+/* 키오스크 */
+.kioskArea{margin-bottom: 178px; flex-wrap: wrap;}
+.kioskArea div:nth-child(1) ul li:not(:last-child){margin-bottom: 18px;}
+.kioskArea div:nth-child(1) ul li button{width: 450px; padding: 28px 24px; font-size: 24px; text-align: left;}
+.kioskArea div:nth-child(1) ul li div{padding: 40px 24px 32px;}
+.kioskArea > p{width: 100%; font-size: 15px; margin-top: 50px;}
+.kioskArea > p::before{width: 18px; margin-right: 12px;}
+
+
+/* 오페래이트 */
+.operateArea{margin-bottom: 305px; text-align: center;}
+.operateArea > p{margin-bottom: 140px;}
+.operateArea > div{align-items: center; justify-content: space-between;}
+.operateArea > div p{font-size: 26px; line-height: 31px; width: 252px;}
+.operateArea > div p:nth-of-type(1)::after{left: 100%;}
+.operateArea > div p:nth-of-type(2)::after{right: 100%;}
+.operateArea > div div{width: 396px; box-shadow: 0px 0px 0px 76px rgba(112, 209, 219, 0.1);}
+.operateArea > div div img{width: 282px; margin-bottom: 24px;}
+.operateArea > div div b{font-size: 26px; line-height: 31px;}
+
+
+/* 컴퍼니 */
+.companyArea{margin-bottom: 220px;}
+
+
+
+/* 컨텍트 어스 */
+.contactUsArea{margin-bottom: 150px; text-align: center;}
+.contactUsArea iframe{width: 100%;}
+.contactUsArea small{font-size: 15px; margin-top: 25px;}
