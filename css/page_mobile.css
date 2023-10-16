@@ -7,12 +7,13 @@
 .serviceArea{margin-bottom: 40px;}
 .serviceArea > div{padding-top: 150px;}
 .serviceArea > div > p{margin-bottom: 60px;}
-.serviceArea > div ul{display: flex; flex-wrap: wrap;}
+.serviceArea > div ul{display: flex; flex-wrap: wrap; justify-content: space-between;}
 .serviceArea > div ul li{width: calc((100% - 40px) / 2);}
 .serviceArea > div ul li:nth-last-child(n + 3){margin-bottom: 75px;}
 .serviceArea > div ul li > div{text-align: center;}
 .serviceArea > div ul li > div > div div::before{display: block; --height: 68px; margin-inline: auto; margin-bottom: 20px;}
-.serviceArea > div ul li > div > div div strong{font-size: 16px; line-height: 19px; margin-bottom: 5px;}
+.serviceArea > div ul li > div > div div strong{font-size: 16px; line-height: 19px;}
+.serviceArea > div ul li > div > div div P{max-width: 120px; margin-inline: auto; margin-top: 5px;}
 .serviceArea > div .circle01{width: 130px;}
 .serviceArea > div .circle02{width: 185px; margin-top: 50px; margin-left: auto;}
 

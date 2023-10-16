@@ -11,10 +11,20 @@ section h3 + strong{font-weight: 700; display: block;}
 section h3 + strong + p{color: var(--color01);}
 
 
+[data-animate="opacity"]{opacity: 0; transition: opacity 0.5s;}
+[data-animate="opacity"].ani{opacity: 1;}
+
 
 /* 해더 */
-header{position: fixed; left: 0; top: 0; width: 100%; display: flex; box-sizing: border-box; z-index: 100;}
+header{position: fixed; left: 0; top: 0; width: 100%; display: flex; box-sizing: border-box; z-index: 100; opacity: 0;
+    animation: startNav 0.5s 1.3s forwards;
+}
+
 header h1 a img{width: 100%;}
+@keyframes startNav {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
 
 
 /* 푸터 */

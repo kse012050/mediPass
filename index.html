@@ -33,9 +33,9 @@
                 <small>환자 본인확인 증명시스템</small>
             </h2>
         </section>
-        <section class="serviceArea">
+        <section class="serviceArea" data-animate>
             <div class="contentSize">
-                <div class="circle01">
+                <div class="circle01" data-animate="opacity">
                     <svg viewBox="0 0 203 203" fill="none">
                         <circle cx="101.5" cy="101.5" r="81.5" stroke="#70D1DB" stroke-width="40"/>
                     </svg>
@@ -46,7 +46,7 @@
                     본인인증 증명시스템은 의료기관에서 본인인증을 정확하게 수행하였음을 증명하고
                     본인인증과 동시에 환자 접수 시스템에 자동으로 등록되도록 처리하는,본인인증 및 보험 수진자 자격확인 서비스 입니다.
                 </p>
-                <ul data-styleIdx>
+                <ul data-styleIdx data-animate>
                     <li>
                         <div>
                             <div>
@@ -88,7 +88,7 @@
                         </div>
                     </li>
                 </ul>
-                <div class="circle02">
+                <div class="circle02" data-animate="opacity">
                     <svg viewBox="0 0 203 203" fill="none">
                         <circle cx="101.5" cy="101.5" r="81.5" stroke="#70D1DB" stroke-width="40"/>
                     </svg>
@@ -109,10 +109,10 @@
                 </p>
             </div>
         </section>
-        <section class="kioskArea contentSize">
+        <section class="kioskArea contentSize" data-animate>
             <div>
                 <h3>KIOSK</h3>
-                <ul>
+                <ul data-tab="click">
                     <li class="active">
                         <button>Desk형</button>
                         <div>
@@ -123,7 +123,7 @@
                             </p>
                         </div>
                     </li>
-                    <li>
+                   <!--  <li>
                         <button>Stand형</button>
                         <div>
                             <strong>본인인증키오스크 스탠드형</strong>
@@ -132,7 +132,7 @@
                                 체온측정, 안면인식, QR코드인증, 지문인식
                             </p>
                         </div>
-                    </li>
+                    </li> -->
                     <li>
                         <button>휴대용</button>
                         <div>
@@ -145,8 +145,13 @@
                     </li>
                 </ul>
             </div>
-            <div>
-                
+            <div data-tab="contents">
+                <div class="active">
+                    <iframe src="https://medi-pass.kr/file/untitled.105/untitled.105.html"></iframe>
+                </div>
+                <div>
+                    <iframe src="https://medi-pass.kr/file/untitled.112/untitled.112.html"></iframe>
+                </div>
             </div>
             <p>마우스로 제품을 움직여보세요.</p>
         </section>
