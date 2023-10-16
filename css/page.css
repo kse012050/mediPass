@@ -23,7 +23,7 @@
 .serviceArea > div [class*="circle"]{aspect-ratio: 1;}
 .serviceArea > div [class*="circle"] svg{animation-name: float; animation-duration: 2s; animation-timing-function: cubic-bezier(.1,.1,.88,.88); animation-iteration-count: infinite;}
 .serviceArea > div .circle01{position: absolute; top: 0; left: 0; transform: translateY(-50%);}
-.serviceArea .square{position: absolute; top: -200px; left: 12%; width: 68.75%; min-width: 1300px; aspect-ratio: 1300 / 2216; background-color: #f8f8f9; transform-origin: top center; transform: rotate(45deg) translateY(100%); z-index: -1;}
+.serviceArea .square{background-color: #f8f8f9; transform-origin: top center; transform: rotate(45deg) translateY(100%); z-index: -1;}
 .serviceArea > div:has( ul.ani) + .square{animation: square 0.5s 0.7s forwards;}
 @keyframes float {
     0% {
@@ -54,19 +54,19 @@
 .kioskArea > div:nth-child(1) ul li.active button{color: white; background-color: var(--bg01);}
 .kioskArea > div:nth-child(1) ul li div{display: none; box-sizing: border-box;}
 .kioskArea > div:nth-child(1) ul li:first-child div{display: block;}
-/* .kioskArea > div:nth-child(1) ul li.active div{display: block;} */
 .kioskArea > div:nth-child(1) ul li div strong{font-size: 28px; font-weight: 700; display: block; margin-bottom: 15px;}
 .kioskArea > div:nth-child(1) ul li div p{font-size: 15px; line-height: 24px; color: var(--color01);}
-.kioskArea > div:nth-child(2){aspect-ratio: 1; position: relative;}
-.kioskArea > div:nth-child(2) > div{opacity: 0; height: 100%; position: relative;}
-.kioskArea > div:nth-child(2) > div.active{opacity: 1; width: 100%; height: 130%; position: absolute; left: 0; top: 0; z-index: 1;}
+.kioskArea > div:nth-child(2){/* aspect-ratio: 1; */ position: relative;}
+.kioskArea > div:nth-child(2) > div{opacity: 0; height: 100%;}
+.kioskArea > div:nth-child(2) > div:not(.active){position: absolute; left: 0; top: 0;}
+.kioskArea > div:nth-child(2) > div.active{opacity: 1; position: relative; width: 100%; z-index: 1;}
 .kioskArea > div:nth-child(2) > div::after{content: ''; position: absolute; right: 0; bottom: 0; width: 91.6666%; height: 0; background-color: #70D1DB; opacity: 0.1; pointer-events: none;}
 .kioskArea.ani > div:nth-child(2) > div.active::after{animation: kioskAni 0.5s forwards;}
 @keyframes kioskAni {
     0%{height: 0;}
     100%{height: calc(100% + 20px);}
 }
-.kioskArea > div:nth-child(2) > div iframe{display: block; width: 120%; height: 100%; }
+.kioskArea > div:nth-child(2) > div iframe{display: block; height: 100%; }
 .kioskArea > p{line-height: 24px; display: flex; align-items: center;}
 .kioskArea > p::before{content: ''; aspect-ratio: 18 / 24; background: url('../images/icon-mouse.png') no-repeat center / cover;}
 

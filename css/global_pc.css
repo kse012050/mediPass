@@ -14,7 +14,8 @@ section:has( > div:nth-child(1)):has( > div:nth-child(2)) > div:nth-child(2){wid
 /* 해더 */
 header h1{width: 120px;}
 header nav ul{display: flex; justify-content: center; align-items: center; gap: 56px;}
-header nav ul li a{font-size: 15px; line-height: 80px; font-weight: 700; color: white;}
+header nav ul li a{font-size: 15px; line-height: 80px; color: white;}
+header p{display: none;}
 header button{display: none;}
 
 @media screen and (1050px < width) {

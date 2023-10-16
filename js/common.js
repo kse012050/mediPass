@@ -4,11 +4,31 @@ $(document).ready(function(){
 
     $(window).scroll(function(){
         const scrollTop = $(this).scrollTop();
+        if(scrollTop > 0){
+            $('header').addClass('active')
+        }else{
+            $('header').removeClass('active')
+        }
         $('[data-animate]').each(function(){
             if($(this).offset().top - $(window).height() / 1.3 < scrollTop){
                 $(this).addClass('ani');
             }
         })
+    })
+
+    $('header > button').click(function(){
+        $('header nav').addClass('active');
+    });
+    $('header nav button').click(function(){
+        $('header nav').removeClass('active');
+    })
+
+    $('header nav ul li a').click(function(e){
+        e.preventDefault();
+        let linkOffetTop = $('#' + $(this).attr('href') + ' h3').offset().top
+        let headerHeight = $('header').height();
+        $('html, body').animate({scrollTop: linkOffetTop - headerHeight})
+        $('nav').removeClass('active')
     })
 
     $('[data-tab="click"] li button').click(function(){

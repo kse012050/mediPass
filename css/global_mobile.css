@@ -10,8 +10,14 @@ section h3 + strong + p{font-size: 14px; line-height: 22px;}
 /* 해더 */
 header{padding-inline: 30px; height: 72px; align-items: center; justify-content: space-between;}
 header h1{width: 90px;}
-header nav{display: none;}
-header button{width: 24px; aspect-ratio: 1; background-image: url('../images/menu.png'); background-size: cover; text-indent: -9999px;}
+header nav{position: fixed; right: -100%; top: 0; width: 270px; height: 100%; padding: 60px 30px 20px; display: flex; flex-direction: column; background-color: white; box-sizing: border-box; transition: 0.5s right;}
+header nav.active{right: 0;}
+header nav ul li:not(:last-child){margin-bottom: 32px;}
+header nav ul li a{font-size: 17px;}
+header nav p{font-size: 11px; color: var(--color02); margin-top: auto;}
+header nav button{position: absolute; right: 30px; top: 24px; background-image: url('../images/icon-close.png');}
+header button{width: 24px; aspect-ratio: 1; background-size: cover; text-indent: -9999px;}
+header > button{background-image: url('../images/icon-menu.png');}
 
 
 /* 푸터 */
