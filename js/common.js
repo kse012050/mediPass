@@ -12,6 +12,8 @@ $(document).ready(function(){
         $('[data-animate]').each(function(){
             if($(this).offset().top - $(window).height() / 1.3 < scrollTop){
                 $(this).addClass('ani');
+            }else{
+                $(this).removeClass('ani');
             }
         })
     })
