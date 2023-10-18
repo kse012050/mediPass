@@ -45,9 +45,6 @@
 .kioskArea > div:nth-child(1) ul li:not(:last-child){margin-bottom: 18px;}
 .kioskArea > div:nth-child(1) ul li button{width: 450px; padding: 28px 24px; font-size: 24px; text-align: left;}
 .kioskArea > div:nth-child(1) ul li div{padding: 40px 24px 32px;}
-.kioskArea > div:nth-child(2) > div.active{height: 130%;}
-.kioskArea > div:nth-child(2) > div::after{width: 91.6666%;}
-.kioskArea > div:nth-child(2) > div iframe{width: 120%;}
 .kioskArea > p{width: 100%; font-size: 15px; margin-top: 50px;}
 .kioskArea > p::before{width: 18px; margin-right: 12px;}
 

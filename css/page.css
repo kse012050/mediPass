@@ -47,6 +47,8 @@
 .applicationArea div:nth-child(1) img{box-shadow: 10px 4px 30px 0px rgba(0, 0, 0, 0.10);}
 .applicationArea div:nth-child(1) img:nth-child(1){width: 58.5483%;}
 .applicationArea div:nth-child(1) img:nth-child(2){width: 42.2580%; position: absolute; right: 7.3%; top: 50%; transform: translateY(-50%); z-index: -1;}
+.applicationArea div:nth-child(1) img{scale: 0;}
+.applicationArea div:nth-child(1).ani img{scale: 1; transition: 1s cubic-bezier(0.4, 0, 0.2, 1);}
 
 
 /* 키오스크 */
@@ -56,17 +58,16 @@
 .kioskArea > div:nth-child(1) ul li:first-child div{display: block;}
 .kioskArea > div:nth-child(1) ul li div strong{font-size: 28px; font-weight: 700; display: block; margin-bottom: 15px;}
 .kioskArea > div:nth-child(1) ul li div p{font-size: 15px; line-height: 24px; color: var(--color01);}
-.kioskArea > div:nth-child(2){/* aspect-ratio: 1; */ position: relative;}
-.kioskArea > div:nth-child(2) > div{opacity: 0; height: 100%;}
-.kioskArea > div:nth-child(2) > div:not(.active){position: absolute; left: 0; top: 0;}
-.kioskArea > div:nth-child(2) > div.active{opacity: 1; position: relative; width: 100%; z-index: 1;}
-.kioskArea > div:nth-child(2) > div::after{content: ''; position: absolute; right: 0; bottom: 0; width: 91.6666%; height: 0; background-color: #70D1DB; opacity: 0.1; pointer-events: none;}
-.kioskArea.ani > div:nth-child(2) > div.active::after{animation: kioskAni 0.5s forwards;}
+.kioskArea > div:nth-child(2){}
+.kioskArea > div:nth-child(2) > div{height: 130%; position: relative; display: none;}
+.kioskArea > div:nth-child(2) > div.active{display: block;}
+.kioskArea > div:nth-child(2) > div::after{content: ''; position: absolute; right: 0; bottom: 0; width: 60%; height: 0; background-color: #70D1DB; pointer-events: none; z-index: -1;}
+.kioskArea > div:nth-child(2).fade > div::after{animation: kioskAni 1.5s 0.5s cubic-bezier(0.4, 0, 0.2, 1) both;}
 @keyframes kioskAni {
     0%{height: 0;}
     100%{height: calc(100% + 20px);}
 }
-.kioskArea > div:nth-child(2) > div iframe{display: block; height: 100%; }
+.kioskArea > div:nth-child(2) > div iframe{position: absolute; left: 0; top: 0; width: 600px; aspect-ratio: 1267 / 1200;}
 .kioskArea > p{line-height: 24px; display: flex; align-items: center;}
 .kioskArea > p::before{content: ''; aspect-ratio: 18 / 24; background: url('../images/icon-mouse.png') no-repeat center / cover;}
 
