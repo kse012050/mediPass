@@ -60,11 +60,22 @@
 .operateArea > p{margin-bottom: 140px;}
 .operateArea > div{align-items: center; justify-content: space-between;}
 .operateArea > div p{font-size: 26px; line-height: 31px; width: 252px;}
+.operateArea > div p::after{top: 50%; transform: translateY(-50%); width: 100%; height: 2px;}
 .operateArea > div p:nth-of-type(1)::after{left: 100%;}
 .operateArea > div p:nth-of-type(2)::after{right: 100%;}
-.operateArea > div div{width: 396px; box-shadow: 0px 0px 0px 76px rgba(112, 209, 219, 0.1);}
+.operateArea > div p:nth-of-type(1) span{transform-origin: right;}
+.operateArea > div p:nth-of-type(2) span{transform-origin: left;}
+.operateArea > div div{width: 396px; /* box-shadow: 0px 0px 0px 76px rgba(112, 209, 219, 0.1); */}
 .operateArea > div div img{width: 282px; margin-bottom: 24px;}
 .operateArea > div div b{font-size: 26px; line-height: 31px;}
+.operateArea > div.ani p::after{transform: scaleX(1); transition: 0.5s 0.5s transform var(--animateFunction);}
+@keyframes operateCenter {
+    0%{scale: 0; box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.05);}
+    40%{box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.05);}
+    70%{scale: 1;}
+    100%{scale: 1; box-shadow: 0px 0px 0px 76px rgba(112, 209, 219, 0.1);}
+}
+  
 
 
 /* 컴퍼니 */

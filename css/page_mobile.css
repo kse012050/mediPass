@@ -47,12 +47,20 @@
 .operateArea > p{margin-bottom: 84px;}
 .operateArea > div{flex-wrap: wrap; justify-content: center; gap: 47px 32px;}
 .operateArea > div p{font-size: 15px; line-height: 18px; width: 130px;}
-.operateArea > div p::after{z-index: -1;}
-.operateArea > div p:nth-of-type(1)::after{left: 50%; transform-origin: left; rotate: -70deg;}
-.operateArea > div p:nth-of-type(2)::after{right: 50%; transform-origin: right; rotate: 70deg;}
-.operateArea > div div{width: 172px; margin-inline: calc((100% - 172px) / 2); box-shadow: 0px 0px 0px 34px rgba(112, 209, 219, 0.1); order: -1;}
+.operateArea > div p::after{z-index: -1; top: -50%; height: 0; width: 2px;}
+.operateArea > div p:nth-of-type(1)::after{right: 0; transform: rotateZ(30deg); transform-origin: top;}
+.operateArea > div p:nth-of-type(2)::after{left: 0; transform: rotateZ(-30deg); transform-origin: top;}
+.operateArea > div div{width: 172px; margin-inline: calc((100% - 172px) / 2); /* box-shadow: 0px 0px 0px 34px rgba(112, 209, 219, 0.1); */ order: -1;}
 .operateArea > div div img{width: 121px; margin-bottom: 10px;}
 .operateArea > div div b{font-size: 14px; line-height: 17px;}
+.operateArea > div.ani p::after{height: 100%; transition: 0.5s 0.5s height var(--animateFunction);}
+@keyframes operateCenter {
+    0%{scale: 0; box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.05);}
+    40%{box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.05);}
+    70%{scale: 1;}
+    100%{scale: 1; box-shadow: 0px 0px 0px 34px rgba(112, 209, 219, 0.1);}
+}
+  
 
 
 /* 컴퍼니 */
