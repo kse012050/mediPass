@@ -17,14 +17,20 @@
 /* 서비스 */
 .serviceArea{position: relative;}
 .serviceArea > div{position: relative;}
+/* .serviceArea > div ul li{transform: translateX(calc(70% + 23px));} */
 .serviceArea > div ul li > div > div div::before{content: ''; height: var(--height); aspect-ratio: 112 / 82; background: url('../images/icon-service.png') no-repeat left top calc(var(--height) * var(--styleIdx) * -1) / 100%;}
 .serviceArea > div ul li > div > div div strong{font-weight: 700;}
 .serviceArea > div ul li > div > div div p{font-size: 14px; line-height: 17px; color: var(--color01); }
 .serviceArea > div [class*="circle"]{aspect-ratio: 1;}
 .serviceArea > div [class*="circle"] svg{animation-name: float; animation-duration: 2s; animation-timing-function: cubic-bezier(.1,.1,.88,.88); animation-iteration-count: infinite;}
 .serviceArea > div .circle01{position: absolute; top: 0; left: 0; transform: translateY(-50%);}
-.serviceArea .square{background-color: #f8f8f9; transform-origin: top center; transform: rotate(45deg) translateY(100%); z-index: -1;}
+.serviceArea .square{background-color: #f8f8f9; transform-origin: top center; transform: rotate(45deg) translateY(100%); transition-timing-function: var(--animateFunction); z-index: -1;}
 .serviceArea > div:has( ul.ani) + .square{animation: square 0.5s 0.7s forwards;}
+.serviceArea > div ul.ani li > div{animation: orderFly 0.5s var(--animateFunction) forwards; animation-delay: calc(var(--styleIdx) * 0.2s);}
+@keyframes orderFly {
+    0%{transform: translate(-100%, 100%); opacity: 0;}
+    100%{transform: translate(0%, 0%); opacity: 1;}
+}
 @keyframes float {
     0% {
       transform: translate(0,0);
@@ -58,18 +64,16 @@
 .kioskArea > div:nth-child(1) ul li:first-child div{display: block;}
 .kioskArea > div:nth-child(1) ul li div strong{font-size: 28px; font-weight: 700; display: block; margin-bottom: 15px;}
 .kioskArea > div:nth-child(1) ul li div p{font-size: 15px; line-height: 24px; color: var(--color01);}
-.kioskArea > div:nth-child(2){}
 .kioskArea > div:nth-child(2) > div{height: 130%; position: relative; display: none;}
 .kioskArea > div:nth-child(2) > div.active{display: block;}
-.kioskArea > div:nth-child(2) > div::after{content: ''; position: absolute; right: 0; bottom: 0; width: 60%; height: 0; background-color: #70D1DB; pointer-events: none; z-index: -1;}
-.kioskArea > div:nth-child(2).fade > div::after{animation: kioskAni 1.5s 0.5s cubic-bezier(0.4, 0, 0.2, 1) both;}
-@keyframes kioskAni {
-    0%{height: 0;}
-    100%{height: calc(100% + 20px);}
-}
-.kioskArea > div:nth-child(2) > div iframe{position: absolute; left: 0; top: 0; width: 600px; aspect-ratio: 1267 / 1200;}
+.kioskArea > div:nth-child(2) > div::after{content: ''; position: absolute; right: 0; height: 0; background-color: #70D1DB; pointer-events: none; z-index: -1;}
+.kioskArea > div:nth-child(2) > div iframe{aspect-ratio: 1267 / 1200;}
 .kioskArea > p{line-height: 24px; display: flex; align-items: center;}
-.kioskArea > p::before{content: ''; aspect-ratio: 18 / 24; background: url('../images/icon-mouse.png') no-repeat center / cover;}
+.kioskArea > p::before{content: ''; aspect-ratio: 18 / 24; background: url('../images/icon-mouse.png') no-repeat center / cover; opacity: 0;}
+.kioskArea > p span{scale: 0;}
+.kioskArea > div:nth-child(2).fade > div::after{animation: kioskAni 1.5s 0.5s cubic-bezier(0.4, 0, 0.2, 1) both;}
+.kioskArea > div:nth-child(2).fade + p span{scale: 1; transition: 1.5s 1s cubic-bezier(0.4, 0, 0.2, 1); transform-origin: left;}
+.kioskArea > div:nth-child(2).fade + p::before{opacity: 1; transition: 1.5s 2s cubic-bezier(0.4, 0, 0.2, 1);}
 
 
 /* 오페래이트 */

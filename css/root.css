@@ -8,4 +8,5 @@
     --bg03: #F8F8F9;
     --responsive: 800px;
     --mobileSize: 300px;
+    --animateFunction: cubic-bezier(0.4, 0, 0.2, 1);
 }
