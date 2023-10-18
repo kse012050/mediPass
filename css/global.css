@@ -14,9 +14,17 @@ section h3 + strong + p{color: var(--color01);}
 [data-animate="fade"]{opacity: 0; transform: translateY(50px);} */
 /* section :has(h3[data-animate].fade, h3[data-animate].fade + strong, h3[data-animate].fade + strong + p){animation: fade 1.5s cubic-bezier(0.4, 0, 0.2, 1) both; opacity: 0; transform: translateY(50px);}
 [data-animate].fade{animation: fade 1.5s cubic-bezier(0.4, 0, 0.2, 1) both; opacity: 0; transform: translateY(50px);} */
-[data-animate="fade"], h3[data-animate="fade"] + strong, h3[data-animate="fade"] + strong + p, h3[data-animate="fade"] + ul
+[data-animate="fade"],
+h3[data-animate="fade"] + strong,
+h3[data-animate="fade"] + strong + p,
+h3[data-animate="fade"] + ul,
+h3[data-animate="fade"] + iframe
 {opacity: 0; transform: translateY(50px);}
-[data-animate="fade"].fade, h3[data-animate="fade"].fade + strong, h3[data-animate="fade"].fade + strong + p, h3[data-animate="fade"].fade + ul
+[data-animate="fade"].fade,
+h3[data-animate="fade"].fade + strong,
+h3[data-animate="fade"].fade + strong + p,
+h3[data-animate="fade"].fade + ul,
+h3[data-animate="fade"].fade + iframe
 {animation: fade 1.5s cubic-bezier(0.4, 0, 0.2, 1) both; opacity: 0; transform: translateY(50px);}
 
 

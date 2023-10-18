@@ -98,4 +98,5 @@
 
 
 /* 컨텍트 어스 */
-.contactUsArea small{line-height: 24px; color: var(--color01); display: block;}
+.contactUsArea small{line-height: 24px; color: var(--color01); display: block; scale: 0;}
+.contactUsArea small.ani{scale: 1; transition: 0.5s scale var(--animateFunction);}
