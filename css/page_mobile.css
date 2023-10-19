@@ -72,5 +72,5 @@
 
 /* 컨텍트 어스 */
 .contactUsArea{margin-bottom: 160px;}
-.contactUsArea iframe{width: calc(100% + var(--spacing) * 2); transform: translateX(calc(var(--spacing) * -1));}
+.contactUsArea iframe{width: calc(100% + var(--spacing) * 2); translate: calc(var(--spacing) * -1);}
 .contactUsArea small{font-size: 14px; margin-top: 20px; text-align: center;}
