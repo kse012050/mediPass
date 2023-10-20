@@ -1,6 +1,7 @@
 /* 메인 - 최상단 */
-.mainArea h2 img{max-width: 300px;}
-.mainArea h2 small{font-size: 16px; line-height: 19px; margin-top: 4.6875vh;}
+.mainArea > div h2 img{max-width: 300px;}
+.mainArea > div h2 small{font-size: 16px; line-height: 19px; margin-top: 4.6875vh;}
+.mainArea > div .circle{width: 130px;}
 
 
 /* 서비스 */
@@ -14,8 +15,7 @@
 .serviceArea > div ul li > div > div div::before{display: block; --height: 68px; margin-inline: auto; margin-bottom: 20px;}
 .serviceArea > div ul li > div > div div strong{font-size: 16px; line-height: 19px;}
 .serviceArea > div ul li > div > div div P{max-width: 120px; margin-inline: auto; margin-top: 5px;}
-.serviceArea > div .circle01{width: 130px;}
-.serviceArea > div .circle02{width: 185px; margin-top: 50px; margin-left: auto;}
+.serviceArea > div .circle{width: 185px; margin-top: 50px; margin-left: auto;}
 .serviceArea .square{position: absolute; top: 0; left: 0; width: 100%; aspect-ratio: 366 / 617;}
 
 

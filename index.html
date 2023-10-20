@@ -30,18 +30,21 @@
             <button>메뉴 열기 / 닫기</button>
         </header>
         <section class="mainArea">
-            <h2 class="contentSize">
-                <img src="images/main-logo.png" alt="Medi Pass x SK broadband">
-                <small>환자 본인확인 증명시스템</small>
-            </h2>
-        </section>
-        <section class="serviceArea" id="service" data-animate="fade">
             <div class="contentSize">
-                <div class="circle01">
+                <h2>
+                    <img src="images/main-logo.png" alt="Medi Pass x SK broadband">
+                    <small>환자 본인확인 증명시스템</small>
+                </h2>
+                <div class="circle" data-animate="fade">
                     <svg viewBox="0 0 203 203" fill="none">
                         <circle cx="101.5" cy="101.5" r="81.5" stroke="#70D1DB" stroke-width="40"/>
                     </svg>
                 </div>
+            </div>
+            <span class="bg"></span>
+        </section>
+        <section class="serviceArea" id="service" data-animate="fade">
+            <div class="contentSize">
                 <h3 data-animate="fade">Service</h3>
                 <strong>스마트 본인확인 증명시스템</strong>
                 <p>
@@ -90,7 +93,7 @@
                         </div>
                     </li>
                 </ul>
-                <div class="circle02" data-animate>
+                <div class="circle" data-animate="fade">
                     <svg viewBox="0 0 203 203" fill="none">
                         <circle cx="101.5" cy="101.5" r="81.5" stroke="#70D1DB" stroke-width="40"/>
                     </svg>
@@ -151,12 +154,12 @@
             </div>
             <div data-tab="contents" data-animate="fade">
                 <div class="active">
-                    <iframe src="https://medi-pass.kr/file/untitled.105/untitled.105.html"></iframe>
-                    <!-- <iframe src="untitled.96.html"></iframe> -->
+                    <!-- <iframe src="https://medi-pass.kr/file/untitled.105/untitled.105.html" class="sample"></iframe> -->
+                    <iframe src="kiosk/desk.html"></iframe>
                 </div>
                 <div>
-                    <iframe src="https://medi-pass.kr/file/untitled.105/untitled.105.html"></iframe>
-                    <!-- <iframe src="https://medi-pass.kr/file/untitled.112/untitled.112.html"></iframe> -->
+                    <!-- <iframe src="https://medi-pass.kr/file/untitled.105/untitled.105.html" class="sample"></iframe> -->
+                    <iframe src="kiosk/carry.html"></iframe>
                 </div>
             </div>
             <p><span>마우스로 제품을 움직여보세요.</span></p>

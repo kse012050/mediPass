@@ -10,10 +10,8 @@ section h3{font-weight: 700;}
 section h3 + strong{font-weight: 700; display: block;}
 section h3 + strong + p{color: var(--color01);}
 
-/* section :has(h3[data-animate], h3[data-animate] + strong, h3[data-animate] + strong + p){opacity: 0; transform: translateY(50px);}
-[data-animate="fade"]{opacity: 0; transform: translateY(50px);} */
-/* section :has(h3[data-animate].fade, h3[data-animate].fade + strong, h3[data-animate].fade + strong + p){animation: fade 1.5s cubic-bezier(0.4, 0, 0.2, 1) both; opacity: 0; transform: translateY(50px);}
-[data-animate].fade{animation: fade 1.5s cubic-bezier(0.4, 0, 0.2, 1) both; opacity: 0; transform: translateY(50px);} */
+
+/* 기본 애니메이션 */
 [data-animate="fade"],
 h3[data-animate="fade"] + strong,
 h3[data-animate="fade"] + strong + p,
@@ -27,21 +25,26 @@ h3[data-animate="fade"].fade + ul,
 h3[data-animate="fade"].fade + iframe
 {animation: fade 1.5s cubic-bezier(0.4, 0, 0.2, 1) both; opacity: 0; transform: translateY(50px);}
 
-
-
-/* [data-animate="opacity"]{opacity: 0; transition: opacity 0.5s;}
-[data-animate="opacity"].ani{opacity: 1;} */
-
-/* section{animation: fade 1.5s cubic-bezier(0.4, 0, 0.2, 1) both; opacity: 0; transform: translateY(50px);} */
-
 @keyframes fade {
     0%{opacity: 0; transform: translateY(50px);}
     100%{opacity: 1; transform: translateY(0);}
 }
 
+
+/* 원 모형 */
+[class*="circle"]{aspect-ratio: 1;}
+[class*="circle"] svg{animation-name: float; animation-duration: 2s; animation-timing-function: cubic-bezier(.1,.1,.88,.88); animation-iteration-count: infinite;}
+@keyframes float {
+    0% {transform: translate(0,0);}
+    25%{transform: translate(0, 15px);}
+    75% {transform: translate(0, -15px);}
+    100% {transform: translate(0,0);}
+}
+
+
 /* 해더 */
 header{position: fixed; left: 0; top: 0; width: 100%; display: flex; box-sizing: border-box; z-index: 100; opacity: 0;
-    animation: startNav 0.5s 1.3s forwards;
+    animation: startNav 1s 2s forwards;
 }
 header.active{background-color: rgba(0, 0, 0, 0.5);}
 header nav ul li a{font-weight: 700;}
