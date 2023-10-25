@@ -30,11 +30,6 @@
     .serviceArea > div ul{margin-top: 510px;}
 }
 
-/* .serviceArea > div ul.ani li > div{animation: orderFly 0.5s forwards; animation-delay: calc(var(--styleIdx) * 0.2s);}
-@keyframes orderFly {
-    0%{transform: translate(-100%, 100%); opacity: 0;}
-    100%{transform: translate(0%, 0%); opacity: 1;}
-} */
 
 /* 어플리케이션 */
 .applicationArea{margin-bottom: 175px;}

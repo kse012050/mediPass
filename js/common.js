@@ -32,13 +32,6 @@ function scrollEvent(){
             $('header').addClass('active') :
             $('header').removeClass('active');
 
-        /* $('section').each(function(){
-            if($(this).offset().top - $(window).height() / 1.7 < scrollTop){
-                $(this).addClass('fade');
-            }else{
-                $(this).removeClass('fade');
-            }
-        }) */
         $('[data-animate]').each(function(){
             if($(this).offset().top - $(window).height() / 1.3 < scrollTop){
                 $(this).addClass($(this).attr('data-animate') ? $(this).attr('data-animate') : 'ani');
@@ -56,7 +49,8 @@ function menuCLick(){
         e.preventDefault();
         let linkOffetTop = $('#' + $(this).attr('href') + ' h3').offset().top
         let headerHeight = $('header').height();
-        $('html, body').animate({scrollTop: linkOffetTop - headerHeight})
+        console.log($('#' + $(this).attr('href') + ' h3').css('transform'));
+        $('html, body').animate({scrollTop: linkOffetTop - headerHeight * 2.5})
         $('nav').removeClass('active')
     })
 
